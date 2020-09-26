@@ -4,7 +4,7 @@ import os
 os.remove("newfile.txt")
 print("success delete!")
 
-# remove file check fist
+# remove file check first
 f = open("A.txt", "x")
 f.close()
 
