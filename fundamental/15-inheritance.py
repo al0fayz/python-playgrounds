@@ -35,8 +35,11 @@ class dosen(person):
     def __init__(self, first_name, last_name, teaching):
         #if you not add super() init parent will be overide by init child 
         #seuper() use for keep init, method and properties on the parents
-        super(),__init__(first_name, last_name)
+        super().__init__(first_name, last_name)
         self.teaching = teaching
 
     def welcome(self):
         print("welcome "+ self.first_name + " "+ self.last_name +" will teaching:"+ self.teaching)
+
+ds = dosen("alfa", "code", "Hacker")
+ds.welcome()
